@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vaibhav's Jewelry Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>✨ Vaibhav's Jewelry ✨</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h2>Our Collection</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="https://i.imgur.com/4KXrWkp.jpg" alt="Necklace">
+        <h3>Gold Necklace</h3>
+        <p>₹5,000</p>
+        <button onclick="addToCart('Gold Necklace', 5000)">Order Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://i.imgur.com/w5BfMnY.jpg" alt="Ring">
+        <h3>Diamond Ring</h3>
+        <p>₹12,000</p>
+        <button onclick="addToCart('Diamond Ring', 12000)">Order Now</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://i.imgur.com/kFX38RJ.jpg" alt="Earrings">
+        <h3>Silver Earrings</h3>
+        <p>₹3,000</p>
+        <button onclick="addToCart('Silver Earrings', 3000)">Order Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vaibhav's Jewelry. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
